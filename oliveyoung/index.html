@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>올리브영</title>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+  <!-- slick slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <!-- js 연결 -->
+  <script src="js/sliders..js"></script>
+  <script src="js/con2.js"></script>
+  <script src="js/con3.js"></script>
+  <!-- 폰트어썸 cdn -->
+  <script src="https://kit.fontawesome.com/c864716c10.js" crossorigin="anonymous"></script>
+  <!-- css 연결 -->
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+  <div class="wrap">
+<!-------- 헤더 ---------->
+  <header>
+    <div class="top_util">
+      <ul>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">장바구니</a></li>
+        <li><a href="#">주문배송</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">매장안내</a></li>
+        <li><a href="#">Global</a></li>
+      </ul>
+    </div>
+    <div class="header-inner">
+      <!-- 로고 -->
+      <div class="logo">
+        <a href="#"><img src="images/header-logo.png" alt=""></a>
+      </div>
+      <!-- 검색창 -->
+      <div class="search">
+        <input type="text" placeholder="검색어를 입력하세요">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <!-- right box -->
+      <div class="right-box">
+        <ul>
+          <li><a href="#">오늘드림</a></li>
+          <li><a href="#">관심매장소식
+            <i class="fa-solid fa-chevron-down"></i>
+          </a></li>
+          <li><a href="#">최근 본 상품
+            <i class="fa-solid fa-chevron-down"></i>
+          </a></li>
+        </ul>
+      </div>
+      <!-- header-inner  끝 -->
+    </div>
+  </header>
+
+  <!------- 메뉴바 --------->
+  <div class="gnb-wrap">
+    <div id="gnb">
+      <!-- 전체메뉴 오픈 버튼 -->
+      <div class="gnb_menu_open">
+        <a href="#">
+          <i class="fa-solid fa-bars"></i>
+          카테고리</a>
+         <!-- 전체메뉴 -->
+        <div class="all_menu">
+          <ul>
+            <li><a href="#">123</a></li>
+            <li><a href="#">123</a></li>
+            <li><a href="#">123</a></li>
+            <li><a href="#">123</a></li>
+          </ul>
+          <button id="btnGnbClose">전체 카테고리 창 닫기</button>
+        </div> 
+      </div>
+      <!-- gbn메뉴 리스트 -->
+      <ul class="gnb_menu">
+        <li><a href="#">오특</a></li>
+        <li><a href="#">신상</a></li>
+        <li><a href="#">랭킹</a></li>
+        <li><a href="#">프리미엄관</a></li>
+        <li><a href="#">기획전</a></li>
+        <li><a href="#">세일</a></li>
+        <li><a href="#">기프트카드</a></li>
+        <li><a href="#">멤버쉽/쿠폰</a></li>
+        <li><a href="#">이벤트</a></li>
+      </ul>
+      <!-- 메인 카테고리 -->
+      <div class="main_cate">
+        <ul>
+          <li><a href="#">기초화장품</a></li>
+          <li><a href="#">더모코스메틱</a></li>
+          <li><a href="#">메이크업·네일</a></li>
+          <li><a href="#">바디케어</a></li>
+          <li><a href="#">헤어케어</a></li>
+          <li><a href="#">향수/디퓨저</a></li>
+          <li><a href="#">미용소품</a></li>
+          <li><a href="#">남성</a></li>
+          <li><a href="#">구강/건강용품</a></li>
+          <li><a href="#">여성/위생용품</a></li>
+          <li><a href="#">건강식품</a></li>
+          <li><a href="#">푸드</a></li>
+          <li><a href="#">라이프/홀</a></li>
+          <li><a href="#">반려동물</a></li>
+        </ul>
+      </div>
+    <!-- //#gnb 끝 -->
+    </div>
+  <!-- gnb-wrap 끝 -->
+  </div>
+
+  <!-------- 컨테이너 --------->
+  <div class="container">
+    <div class="container-wrap">
+
+      <!-- 메인 슬라이드 -->
+      <div class="main-slide-wrap">
+        <div id="main-slide">
+          <div class="slide">
+            <img src="images/main-slide/main-slide01.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/main-slide/main-slide02.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/main-slide/main-slide03.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/main-slide/main-slide04.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/main-slide/main-slide05.jpg" alt="">
+          </div>
+        </div>  
+          <!-- 슬라이드 컨트롤 버튼 -->
+         <div class="slide-button">
+          <div class="prev"></div>  
+          <div class="next"></div>  
+          <div class="btn_pause"></div>
+        </div> 
+        <!-- main-slider-wrap 끝 -->
+      </div>
+
+      <!-- 컨텐츠 1 -->
+      <div class="contents" id="banner_wrap">
+        <img src="images/banner/banner01.jpg" alt="">
+        <img src="images/banner/banner02.jpg" alt="">
+      </div>
+      <!-- 컨텐츠 2 -->
+      <div class="contents" id="curation_wrap">
+        <div class="curation">
+          <h2>유사한 고객님이<br>많이 구매했어요</h2>
+          <div class="cur-wrap">
+            <div class="cur">
+              <img src="images/cur/cur01.jpg" alt="">
+              <span>아르맨</span>
+              <p>웰릿 아르맨30포(1개월분)</p>
+              <strong>41,900원</strong>
+            </div>
+            <div class="cur">
+              <img src="images/cur/cur02.jpg" alt="">
+              <span>키스미</span>
+              <p>키스미 헤비로테이션 아이브로우</p>
+              <strong>9,900원~</strong>
+            </div>
+          </div>
+          <div class="cur-next">
+            다른 상품 추천해드릴게요
+          </div>
+        </div>
+        <div class="curation">
+          <h2>최근 본 상품과<br>연관 상품 추천해드려요</h2>
+          <div class="cur-wrap">
+            <div class="cur">
+              <img src="images/cur/cur05.jpg" alt="">
+              <span>더마토리</span>
+              <p>더마토리 하이포알러제닉 거즈 패드</p>
+              <strong>15,400원</strong>
+            </div>
+            <div class="cur">
+              <img src="images/cur/cur06.jpg" alt="">
+              <span>아누아</span>
+              <p>아누아 어성초77</p>
+              <strong>33,700원</strong>
+            </div>
+          </div>     
+          <div class="cur-next">
+            다른 상품 추천해드릴게요
+          </div>   
+        </div>
+      </div>
+
+      <!-- 컨텐츠 3 -->
+      <div class="contents clearfix">
+        <h1>주목해야 할 브랜드 </h1>
+        <div class="title">
+          <ul class="clearfix">
+            <li class="on"><a href="#">더마토리</a></li>
+            <li><a href="#">눅스</a></li>
+            <li><a href="#">리얼테크닉스</a></li>
+            <li><a href="#">투썸플레이스</a></li>
+          </ul>
+        </div>
+        <div class="tab-menu-wrap">
+          <div class="tab-menu on">
+            <ul class="tab-list clearfix">
+              <li><a href="#"><img src="images/con3/더마01.jpg" alt="">
+                <span>더마토리</span><p>더마토리 하이포알러제닉 시카 거즈 패드</p><strong>15,400원</strong></a></li>
+              <li><a href="#"><img src="images/con3/더마02.jpg" alt="">
+                <span>더마토리</span><p>더마토리 프로트러블 모공패드</p><strong>15,400원</strong></a></li>
+              <li><a href="#"><img src="images/con3/더마03.jpg" alt="">
+                <span>더마토리</span><p>더마토리 프로 시카 징크덤 밴드마스크</p><strong>10,000원</strong></a></li>
+              <li><a href="#"><img src="images/con3/더마04.jpg" alt="">
+                <span>더마토리</span><p>더마토리 프로 히알샷 물광토너 패드</p><strong>22,000원</strong></a></li>
+            </ul>
+            <div class="brand-more">더마토리 브랜드 상품 전체보기 ></div>
+          </div>
+          <div class="tab-menu">
+            <ul class="tab-list clearfix">
+              <li><a href="#"><img src="images/con3/눅스01.jpg" alt="">
+                <span>눅스</span><p>눅스 베스트셀러 기프트세트</p><strong>32,000원</strong></a></li>
+              <li><a href="#"><img src="images/con3/눅스02.jpg" alt="">
+                <span>눅스</span><p>눅스 윌 프로디쥬스 멀티 드라이오일</p><strong>49,000원</strong></a></li>
+              <li><a href="#"><img src="images/con3/눅스03.jpg" alt="">
+                <span>눅스</span><p>눅스 베스트셀러 기프트세트</p><strong>32,000원</strong></a></li>
+              <li><a href="#"><img src="images/con3/눅스04.jpg" alt="">
+                <span>눅스</span><p>눅스 프로디쥬스 플로럴오일</p><strong>15,750원</strong></a></li>
+            </ul>
+            <div class="brand-more">눅스 브랜드 상품 전체보기</div>
+          </div>
+          <div class="tab-menu">
+            <ul class="tab-list">
+              <li><a href="#"><img src="images/con3/리얼01.jpg" alt="">
+                <span>리얼테크닉스</span><p>리얼테크닉스 블러쉬브러시</p><strong>11,970원</strong></a></li>
+              <li><a href="#"><img src="images/con3/리얼02.jpg" alt="">
+                <span>리얼테크닉스</span><p>리얼테크닉스 인핸스드아이세트</p><strong>16,380원</strong></a></li>
+              <li><a href="#"><img src="images/con3/리얼03.jpg" alt="">
+                <span>리얼테크닉스</span><p>리얼테크닉스 캐시미어드림즈 파우더 브러시</p><strong>22,000원</strong></a></li>
+              <li><a href="#"><img src="images/con3/리얼04.jpg" alt="">
+                <span>리얼테크닉스</span><p>리얼테크닉스 얼티밋 스펀지트리오</p><strong>23,800원</strong></a></li>
+            </ul>
+            <div class="brand-more">리얼테크닉스 브랜드 상품 전체보기</div>
+          </div>
+          <div class="tab-menu">
+            <ul class="tab-list">
+              <li><a href="#"><img src="images/con3/투썸01.jpg" alt="">
+                <span>투썸플레이스</span><p>투썸 에이리스트 캡슐커피</p><strong>8,200원</strong></a></li>
+              <li><a href="#"><img src="images/con3/투썸02.jpg" alt="">
+                <span>투썸플레이스</span><p>투썸 스페셜기프트세트</p><strong>13,200원</strong></a></li>
+              <li><a href="#"><img src="images/con3/투썸03.jpg" alt="">
+                <span>투썸플레이스</span><p>투썸 에이리스트 아이스크림</p><strong>16,200원</strong></a></li>
+              <li><a href="#"><img src="images/con3/투썸04.jpg" alt="">
+                <span>투썸플레이스</span><p>투썸 에이리스트 아이스크림</p><strong>20,200원</strong></a></li>
+            </ul>
+            <div class="brand-more">투썸플레이스 브랜드 상품 전체보기</div>
+
+          </div>
+          <!-- tab-menu-wrap 끝 -->
+        </div>
+        <!-- 컨텐츠 3 끝 -->
+      </div>
+
+      <!-- 컨텐츠 4 실시간 view 랭킹-->
+      <div class="contents" id="view">
+        <h1>실시간 View 랭킹</h1>
+        <div class="view-wrap clearfix">
+          <ul class="view-img">
+            <li><a href="#"><img src="images/con4/ran01.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/con4/ran02.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/con4/ran03.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/con4/ran04.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/con4/ran05.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/con4/ran06.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/con4/ran07.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/con4/ran08.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/con4/ran09.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/con4/ran10.jpg" alt=""></a></li>
+          </ul>
+          <ul class="view-text">
+            <li><a href="#">tex1</a></li>
+            <li><a href="#">tex2</a></li>
+            <li><a href="#">tex3</a></li>
+            <li><a href="#">tex4</a></li>
+            <li><a href="#">tex5</a></li>
+            <li><a href="#">tex6</a></li>
+            <li><a href="#">tex7</a></li>
+            <li><a href="#">tex8</a></li>
+            <li><a href="#">tex9</a></li>
+            <li><a href="#">tex10</a></li>
+          </ul>
+          <!-- view-wrap끝 -->
+        </div>
+      </div>
+
+      <!-- container-wrap끝 -->
+    </div>
+    <!-- container 끝 -->
+  </div>
+
+  <!--------푸터 ----------->
+  <footer>
+    <div class="ft-wrap">
+      <ul>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">채용안내</a></li>
+        <li><a href="#">가맹점 개설문의</a></li>
+        <li><a href="#">상품입점 및 제휴문의</a></li>
+        <li><a href="#">사이버 감사실</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <div class="copy">
+         &copy; 양연희
+       </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

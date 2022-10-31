@@ -1,0 +1,528 @@
+
+/* Reset CSS */
+*{ margin: 0; padding: 0;}
+a {text-decoration: none; color: #222;}
+li {list-style: none;}
+body * {
+  box-sizing: border-box;
+}
+html {font-size: 16px;}
+/* 최소 화면 설정 */
+body {
+  min-width: 1020px;
+}
+
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ----------헤더---------- */
+header {
+  width: 1020px;
+  display: block;
+  margin: 0 auto;
+}
+/* 탑메뉴 */
+.top_util {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: flex-end;
+}
+.top_util ul {
+  display: flex;
+  font-size: 0.7em;
+}
+.top_util ul li a {
+  border-left: 1px solid #dadada;
+  padding: 0 10px;
+  color: #222;
+}
+.top_util ul li:first-child a {
+  border-left: none;
+}
+/* 로고 및 헤더 이너 */
+.header-inner {
+  height: 104px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 로고크기 */
+.logo img {
+  width: 300px;
+}
+/* 검색창 */
+.search {
+  position: relative;
+  height: 40px;
+}
+.search input {
+  width: 300px;
+  height: 100%;
+  border: 2px solid rgba(110, 179, 6, 0.829);
+  border-radius: 20px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+.search i {
+  position: absolute;
+  right: 10px;
+  font-size: 1.2em;
+  line-height: 40px;
+  cursor: pointer;
+  color: #bbb;
+}
+/* 오른쪽 메뉴 */
+.right-box {
+  width: 350px;
+}
+.right-box ul {
+  display: flex;
+  justify-content: center
+}
+.right-box ul li a {
+  border-left: 1px solid #dadada;
+  padding: 0 10px;
+  color: #222;
+}
+.right-box ul li:first-child a {
+  border-left: none;
+}
+.right-box i {
+  font-size: 0.5em;
+}
+
+/* --------메뉴바---------- */
+.gnb-wrap {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #bbb;
+  border-bottom: 2px solid black;
+  display: block;
+  margin: 0 auto;
+}
+#gnb {
+  position: relative;
+  width: 1020px;
+  height: 500px;
+  display: block; 
+  margin: 0 auto;
+}
+/* 전체메뉴 열기 버튼*/
+.gnb_menu_open {
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+.gnb_menu_open {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+/* 메뉴 리스트 */
+.gnb_menu { 
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  display: inline-block;
+}
+.gnb_menu li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.gnb_menu li a {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.gnb_menu li a:hover {
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+/* 메인 카테고리  */
+.main_cate {
+  /* display: none; */
+  position: absolute;
+  top: 50px;
+  height: 450px;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.363);
+  z-index: 10;
+}
+.main_cate ul {
+  height: 100%;
+}
+.main_cate ul li {
+  height: 32.1428px;
+  line-height: 32.1428px;
+}
+.main_cate li a {
+  display: block;
+  height: 7%;
+  font-size: 0.9em;
+  padding-left: 60px;
+  font-weight: bold;
+  color: white;
+}
+/* 전체메뉴 */
+.all_menu {
+  display: none;
+  background-color: aquamarine;
+  position: absolute;
+  top: 51px;
+  left: 0;
+  width: 100%;
+  height: 600px;
+}
+
+/* ---------- 메인 슬라이더 ------------ */
+.main-slide-wrap {
+  position: relative;
+  height: 450px;
+}
+
+#main-slide { 
+  z-index: -10;
+}
+.slide-button {
+  width: 1020px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 이전, 다음 버튼 */
+.prev {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 50px;
+  left: 250px;
+  background-image:url(../images/arrow.png) ;
+  cursor: pointer;
+}
+.next {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 50px;
+  left: 350px;
+  background-image:url(../images/arrow.png) ;
+  background-position: right top;
+  cursor: pointer;
+}
+/* 재생, 정지 버튼 */
+.btn_pause {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 50px;
+  left: 400px;
+  background-image:url(../images/play_pause.png) ;
+  background-position: bottom;
+  cursor: pointer;
+  border: none;
+  text-indent: -9999px;
+}
+.btn_pause.on {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 50px;
+  left: 400px;
+  background-image:url(../images/play_pause.png) ;
+  background-position: top;
+  cursor: pointer;
+}
+/* 페이지 인덱스 */
+.slider__counter {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  bottom: 50px;
+  left: 630px;
+  color: rgb(141, 141, 141);
+}
+
+
+/* ---------콘텐츠 공통 가운데 정렬--------- */
+.contents {
+  width: 1020px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+/* ---------콘텐츠1 배너------------- */
+#banner_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#banner_wrap img {
+  width: 508px;
+  cursor: pointer;
+}
+
+
+/* ---------콘텐츠2 curation---------*/
+#curation_wrap {
+  display: flex;
+  height: 400px;
+} 
+.curation {
+  width: 50%;
+  padding-left: 20px;
+}
+.curation:first-child {
+  border-right: 1px solid #bbb;
+}
+.cur-wrap {
+  width: 100%;
+  display: flex;
+}
+.cur {
+  padding: 10px;
+  cursor: pointer;
+}
+.cur span {
+  color: #bbb;
+}
+.cur p {
+  font-size: 0.9em;
+}
+.cur strong {
+  color: red;
+  text-align: center;
+}
+.cur img {
+  width: 215px;
+  height: 215px;
+  display: block;
+  margin: 0 auto;
+}
+.cur-wrap {
+  position: relative;
+}
+.cur-next {
+  margin-top: 20px;
+  width: 70%;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  cursor: pointer;
+  border: 1px solid rgb(111, 111, 111);
+  text-align: center;
+  color: rgb(111, 111, 111);
+}
+
+/* ----------컨텐츠3 메인 탭메뉴--------- */
+
+/* 탭메뉴 타이틀 박스 */
+.title {
+  margin: 20px 0;
+}
+.title ul {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+}
+.title ul li  {
+  float: left;
+  width: 25%;
+  height: 100%;
+  border: 1px solid yellowgreen;
+  text-align: center;
+}
+.title ul li a {
+  display: block;
+  line-height: 50px;
+}
+.title ul li.on {
+  color: white;
+  background-color: yellowgreen;
+  font-weight: bold;
+}
+.title ul li.on a {
+  color: white;
+}
+
+/* 탭메뉴 이미지 박스 */
+
+.tab-menu-wrap {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.tab-menu-wrap > div {
+  position: absolute;
+  opacity: 0;
+}
+.tab-menu-wrap > div.on {
+  opacity: 1;
+}
+.tab-menu {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.tab-list li {
+  float: left;
+  width: 25%;
+  height: 330px;
+  text-align: center;
+  line-height: 1.6em;
+  position: relative;
+}
+
+.tab-list li span,
+p,
+strong {
+  display: block;
+  width: 100%;
+}
+
+.tab-list span {
+  color: #bbb;
+}
+.tab-list p {
+  font-size: 0.9em;
+}
+.tab-list strong {
+  position: absolute;
+  bottom: 10px;
+  color: red;
+
+}
+.tab-list img {
+  width: 215px;
+  height: 215px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.tab-menu.on {
+  opacity: 0;
+}
+
+
+/* 브랜드 더보기 박스 */
+.brand-more {
+  width: 400px;
+  height: 30px;
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  bottom: 10px;
+  text-align: center;  
+  line-height: 30px;
+  cursor: pointer;
+}
+
+
+/* -------contents4 view 슬라이드 */
+#view {
+  height: 350px;
+}
+#view h1 {
+  padding-bottom: 20px;
+}
+.view-wrap {
+  width: 100%;
+  height: 250px;
+  border-top: 1px solid #bbb;
+}
+.view-wrap ul {
+  float: left;
+  height: 100%;
+}
+.view-img {
+  width: 30%;
+  display: block;
+}
+.view-img img {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.view-text {
+  width: 70%;
+  height: 300px;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.view-text .slick-list {
+  width: 600px;
+  overflow: visible;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto;
+
+}
+.view-text .slick-current {
+  font-weight: bold;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+
+/* -----------푸터-------- */
+footer {
+  margin-top: 40px;
+  width: 100%;
+  height: 50px;
+  background-color: #dadada46;
+}
+.ft-wrap {
+  width: 1020px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.ft-wrap ul {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+.ft-wrap ul li {
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+.ft-wrap ul li a {
+  color: rgb(116, 114, 114);
+}
+.copy {
+  position: absolute;
+  right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
